@@ -24,7 +24,7 @@ def _safe_filename(name: str) -> str:
     return name or '_'
 
 
-def download_songs(queries=None, ids=None, path='downloads'):
+def download_songs(queries, ids, path='downloads'):
     if ids is None:
         ids = []
     if queries is None:
